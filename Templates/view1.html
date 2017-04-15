@@ -1,0 +1,14 @@
+<div>
+    <h1>I am view1!!</h1>
+    <form ng-submit = "Display(username)">
+    <input type = "text" placeholder = "Enter your Github username" ng-model = "username">
+    <input type = "submit">
+    </form>
+    <div ng-if = "Loading"><b>Loading....</b></div>
+    <div>
+        <img ng-src = "{{avatar}}">
+    </div>
+    <div>
+        {{bio}}
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" ng-app = "MyModule">
+<head>
+    <meta charset="UTF-8">
+    <title>Lazy-Load-prototype</title>
+    <script type = "text/javascript" src="Vendors/angular.min.js"></script>
+    <script src="Vendors/angular-route.min.js"></script>
+    <script src="Vendors/jquery.min.js"></script>
+    <script src="Vendors/ocLazyLoad.js"></script>
+    <script src="JS/app.js"></script>
+</head>
+<body ng-controller = "Main">
+<h3>Sample Lazy Loading using AngularJS & ocLazyLoad:</h3>
+<h3>Check the sources of this page and you should see the controllers of the file load only when the specific view has been accesed</h3>
+<h3>Goto:
+    <button><a href = "#!/view1">View1</a></button>
+    <button><a href = "#!/view2">View2</a></button>
+</h3>
+<div ng-view></div>
+</body>
+</html>
